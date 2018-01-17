@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/styles/main.css">
+  <script>
+    ! function (e, t) {
+      function n() {
+        t.body ? t.body.style.fontSize = 12 * o + "px" : t.addEventListener("DOMContentLoaded", n)
+      }
+
+      function d() {
+        var e = i.clientWidth / 10;
+        i.style.fontSize = e + "px"
+      }
+      var i = t.documentElement,
+        o = e.devicePixelRatio || 1;
+      if (n(), d(), e.addEventListener("resize", d), e.addEventListener("pageshow", function (e) {
+          e.persisted && d()
+        }), o >= 2) {
+        var a = t.createElement("body"),
+          s = t.createElement("div");
+        s.style.border = ".5px solid transparent", a.appendChild(s), i.appendChild(a), 1 === s.offsetHeight && i.classList
+          .add("hairlines"), i.removeChild(a)
+      }
+    }(window, document);
+  </script>
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+    <defs>
+      <symbol viewBox="0 0 20 32" id="arrow-left">
+        <path fill="#fff" d="M16.552 5.633L14.508 3.59 2.243 15.853 14.508 28.41l2.044-2.043-10.22-10.513z"></path>
+      </symbol>
+      <symbol viewBox="0 0 384 512" id="bookmark" class="fa-bookmark">
+        <path d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm16 456.287l-160-93.333-160 93.333V48c0-8.822 7.178-16 16-16h288c8.822 0 16 7.178 16 16v408.287z"
+          class=""></path>
+      </symbol>
+      <symbol viewBox="0 0 448 512" id="share">
+        <path d="M448 416c0 53.019-42.981 96-96 96s-96-42.981-96-96a95.942 95.942 0 0 1 4.438-28.924l-98.337-61.46C144.887 341.966 121.616 352 96 352c-53.019 0-96-42.981-96-96s42.981-96 96-96c25.616 0 48.887 10.034 66.101 26.385l98.337-61.461A95.942 95.942 0 0 1 256 96c0-53.019 42.981-96 96-96s96 42.981 96 96-42.981 96-96 96c-25.616 0-48.887-10.034-66.101-26.385l-98.337 61.461c5.917 18.75 5.922 39.083 0 57.848l98.337 61.461C303.113 330.034 326.384 320 352 320c53.019 0 96 42.981 96 96zM352 48c-26.467 0-48 21.533-48 48s21.533 48 48 48 48-21.533 48-48-21.533-48-48-48M96 208c-26.467 0-48 21.533-48 48s21.533 48 48 48 48-21.533 48-48-21.533-48-48-48m256 160c-26.467 0-48 21.533-48 48s21.533 48 48 48 48-21.533 48-48-21.533-48-48-48"
+          class=""></path>
+      </symbol>
+      <symbol id="eye" viewBox="0 0 576 512" class="svg-inline--fa fa-eye fa-w-18 fa-3x">
+        <path d="M569.354 231.631C512.969 135.949 407.81 72 288 72 168.14 72 63.004 135.994 6.646 231.631a47.999 47.999 0 0 0 0 48.739C63.031 376.051 168.19 440 288 440c119.86 0 224.996-63.994 281.354-159.631a47.997 47.997 0 0 0 0-48.738zM288 392c-75.162 0-136-60.827-136-136 0-75.162 60.826-136 136-136 75.162 0 136 60.826 136 136 0 75.162-60.826 136-136 136zm104-136c0 57.438-46.562 104-104 104s-104-46.562-104-104c0-17.708 4.431-34.379 12.236-48.973l-.001.032c0 23.651 19.173 42.823 42.824 42.823s42.824-19.173 42.824-42.823c0-23.651-19.173-42.824-42.824-42.824l-.032.001C253.621 156.431 270.292 152 288 152c57.438 0 104 46.562 104 104z"
+          class=""></path>
+      </symbol>
+
+
+    </defs>
+  </svg>
+  <div class="warper">
+    <div class="app-header">
+      <header class="header-wrapper">
+        <div class="header-left">
+          <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use>
+          </svg>
+        </div>
+        <h1>Seleted</h1>
+      </header>
+
+      <div class="search-wrapper">
+        <form action="">
+          <svg aria-hidden="true" data-fa-processed="" data-prefix="far" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16 fa-2x">
+            <path fill="currentColor" d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+              class=""></path>
+          </svg>
+          <input type="text" placeholder="search by name">
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="items">
+        <div class="item-pic">
+          <img src="./assets/images/1.png" alt="">
+        </div>
+        <section class="item-info">
+          <h3>Herman Romero</h3>
+          <p class="p-author">
+            Annihiliation
+          </p>
+          <div class="stars" data-stars="1">
+            <div>
+              <svg height="25" width="23" class="star rating" data-rating="1">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;" />
+              </svg>
+              <svg height="25" width="23" class="star rating" data-rating="2">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;" />
+              </svg>
+              <svg height="25" width="23" class="star rating" data-rating="3">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;" />
+              </svg>
+              <svg height="25" width="23" class="star rating" data-rating="4">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;" />
+              </svg>
+              <svg height="25" width="23" class="star rating" data-rating="5">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;" />
+              </svg>
+            </div>
+            <span>349 reviews</span>
+          </div>
+          <div class="tag-line">
+            <div class="tag">
+              <i>
+                <svg>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#eye"></use>
+                </svg>
+              </i>
+              <p>300</p>
+            </div>
+            <div class="tag">
+              <i>
+                <svg>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bookmark"></use>
+                </svg>
+
+              </i>
+              <p>300</p>
+            </div>
+          </div>
+        </section>
+        <div class="actions">
+          <button class="bookmark action-button">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bookmark"></use>
+            </svg>
+
+          </button>
+          <button class="share action-button">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use>
+            </svg>
+
+          </button>
+        </div>
+      </div>
+        <div class="items">
+          <div class="item-pic">
+            <img src="./assets/images/2.png" alt="">
+          </div>
+          <section class="item-info">
+            <h3>Herman Romero</h3>
+            <p class="p-author">
+              Annihiliation
+            </p>
+            <div class="stars" data-stars="1">
+              <div>
+                <svg height="25" width="23" class="star rating" data-rating="1">
+                  <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;" />
+                </svg>
+                <svg height="25" width="23" class="star rating" data-rating="2">
+                  <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;" />
+                </svg>
+                <svg height="25" width="23" class="star rating" data-rating="3">
+                  <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;" />
+                </svg>
+                <svg height="25" width="23" class="star rating" data-rating="4">
+                  <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;" />
+                </svg>
+                <svg height="25" width="23" class="star rating" data-rating="5">
+                  <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;" />
+                </svg>
+              </div>
+              <span>349 reviews</span>
+            </div>
+            <div class="tag-line">
+              <div class="tag">
+                <i>
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#eye"></use>
+                  </svg>
+                </i>
+                <p>300</p>
+              </div>
+              <div class="tag">
+                <i>
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bookmark"></use>
+                  </svg>
+        
+                </i>
+                <p>300</p>
+              </div>
+            </div>
+          </section>
+          <div class="actions">
+            <button class="bookmark action-button">
+              <svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bookmark"></use>
+              </svg>
+        
+            </button>
+            <button class="share action-button">
+              <svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use>
+              </svg>
+        
+            </button>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>
