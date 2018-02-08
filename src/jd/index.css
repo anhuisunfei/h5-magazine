@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+a:hover {
+    color: #f10215
+}
+
+ul li {
+    list-style-type: none;
+}
+
+body {
+    background: #f0f3ef;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, \\5B8B\4F53, sans-serif;
+    color: #666;
+}
+
+.header-w {
+    height: 30px;
+    line-height: 30px;
+    background: #e3e4e5;
+    border-bottom: 1px solid #ddd;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.header-w ul li {
+    display: block;
+    float: left;
+}
+
+.w {
+    width: 1090px;
+    margin: 0 auto;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #999;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.arrow-top {
+    border-top-color: #e3e4e5;
+    z-index: 3;
+    margin-top: -3px;
+}
+
+.dt {
+    position: relative;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dt {
+    border: 1px solid #e3e4e5;
+    height: 28px;
+    line-height: 28px;
+}
+
+.dropdown:hover .dt {
+    background: #fff;
+    border-width: 1px 1px 0 1px;
+    border-color: #ddd;
+   padding-bottom: 2px;
+}
+
+.dropdown:hover .dropdown-layer {
+    display: block;
+}
+
+.dropdown:hover .arrow-top {
+    border-top-color: #fff;
+}
+
+.dropdown-layer {
+    position: absolute;
+    border: solid #ddd;
+    border-width: 0 1px 1px;
+    width: 280px;
+    height: 100px;
+    top: 30px;
+    display: none;
+    line-height: 24px;
+    padding: 10px;
+}
+
+.mylist {
+    padding: 0 0 10px 15px;
+    overflow: hidden;
+}
+
+.mycustomer {
+    right: 0;
+}
+
+.force {
+    float: left;
+    width: 126px;
+}
+
+#mycity .dt svg {
+    position: relative;
+    top: 3px;
+}
+
+.style-red {
+    color: #f10215;
+}
+
+.city {
+    width: 300px;
+}
+
+.city .item {
+    float: left;
+    width: 60px;
+    padding: 2px 0;
+}
+
+.item a {
+    padding: 0 8px;
+    float: left;
+}
+
+.item a:hover {
+    background: #f4f4f4;
+}
+
+.item a.active {
+    background: #f10215;
+    color: #FFF;
+}
+
+.separator {
+    display: inline-block;
+    width: 0;
+    height: 14px;
+    vertical-align: top;
+    position: relative;
+    border-left: 1px solid #ccc;
+    margin: 10px 5px 0 5px;
+}

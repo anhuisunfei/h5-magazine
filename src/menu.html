@@ -147,14 +147,19 @@
   </div>
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
   <script>
+
+    function addAnimate(el,className){
+      $(el).addClass(className).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+        $(this).removeClass(className);
+      });
+    }
     $(function(){
       $('.share_menu li a').click(function(){
         
         $(this).parent().siblings('li').removeClass('active');
-        $(this).parent('li').addClass('active  zoomIn animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-          $(this).removeClass('zoomIn animated');
-        });
-
+        var el=$(this).parent('li')
+        el.addClass('active')
+        addAnimate(el,'  zoomIn animated')
       })
     })
   </script>
