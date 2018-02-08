@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+  <style>
+    .clearfix:after,
+    .clearfix:before {
+      content: " ";
+      display: table;
+
+    }
+
+    .clearfix:after {
+      clear: both;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    body {
+      background: #374046;
+    }
+
+    .menu {
+      background: #3e464c;
+      height: 60px;
+      position: relative;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);
+    }
+
+    .menu h1 {
+      float: left;
+      height: 60px;
+      padding: 10px 10px 10px 0;
+      margin-left: 10px;
+    }
+
+    .menu a {
+      color: #a1887f;
+
+    }
+
+    .share_menu {
+      position: absolute;
+      left: 50%;
+      top: 10px;
+    }
+
+    .share_menu ul {
+      position: relative;
+      top: 10px;
+      left: -50%;
+    }
+
+    .share_menu li {
+      display: inline;
+      color: #FFFFFF;
+      list-style: none;
+      margin: 0;
+      padding: 10px;
+    }
+
+    .share_menu li a {
+      padding: 8px 10px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .share_menu .active a {
+      background: #a1887f;
+
+    }
+
+    .menu_sponsor {
+      float: right;
+      animation-delay: .5s;
+    }
+
+    .menu_sponsor a {
+      text-transform: uppercase;
+      padding: 0 15px;
+      font-weight: 500;
+      margin: 10px 5px;
+      line-height: 40px;
+      display: block;
+      background: #2856b6;
+
+      box-shadow: 0 3px 10px rgba(0, 0, 0, .23), 0 3px 10px rgba(0, 0, 0, .16);
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 14px;
+      border-radius: 2px;
+    }
+
+    .menu_sponsor a:hover{
+      background: #234ca1;
+    }
+    @media (max-width: 768px) {
+      .share_menu{
+        display: none;  
+      }
+
+      .menu_sponsor{
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu clearfix">
+
+    <h1>
+      <a href="#">Material Design</a>
+    </h1>
+    <div class="share_menu">
+      <ul>
+        <li class="active">
+          <a href="#">palettes</a>
+        </li>
+        <li>
+          <a href="#">ICONS</a>
+        </li>
+        <li>
+          <a href="#">COLORS</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu_sponsor">
+      <a href="#">More Material Design</a>
+    </div>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+  <script>
+    $(function(){
+      $('.share_menu li a').click(function(){
+        
+        $(this).parent().siblings('li').removeClass('active');
+        $(this).parent('li').addClass('active  zoomIn animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+          $(this).removeClass('zoomIn animated');
+        });
+
+      })
+    })
+  </script>
+</body>
+
+</html>
